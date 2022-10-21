@@ -48,10 +48,6 @@ func findAll() (events.APIGatewayProxyResponse, error) {
 		}, nil
 	}
 
-	for _, item := range res.Items {
-		fmt.Println(item)
-	}
-
 	return events.APIGatewayProxyResponse{
 		StatusCode: http.StatusOK,
 		Headers: map[string]string{
