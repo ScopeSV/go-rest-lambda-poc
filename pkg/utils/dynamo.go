@@ -10,7 +10,6 @@ import (
 )
 
 func LoadConfig() aws.Config {
-
 	cfg, err := config.LoadDefaultConfig(context.TODO())
 
 	if err != nil {

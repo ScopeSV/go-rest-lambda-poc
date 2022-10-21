@@ -17,7 +17,6 @@ import (
 )
 
 func insert(req events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
-
 	var note structs.NotePayload
 
 	if err := json.Unmarshal([]byte(req.Body), &note); err != nil {
